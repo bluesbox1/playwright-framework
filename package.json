@@ -1,0 +1,25 @@
+{
+  "name": "playwright-framework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bluesbox1/playwright-framework.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bluesbox1/playwright-framework/issues"
+  },
+  "homepage": "https://github.com/bluesbox1/playwright-framework#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.45.0",
+    "@types/node": "^20.14.9"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5"
+  }
+}
