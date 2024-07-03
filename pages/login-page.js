@@ -4,8 +4,8 @@ exports.LoginPage = class LoginPage{
     */
     constructor(page){
         this.page = page;
-        this.txtUsername = page.getByPlacehoder('Username');
-        this.txtPassword = page.getByPlacehoder('Password');
+        this.txtUsername = page.getByPlaceholder('Username');
+        this.txtPassword = page.getByPlaceholder('Password');
         this.btnLogin = page.getByRole('button', { name: 'Login' });
     }
 

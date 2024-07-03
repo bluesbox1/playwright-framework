@@ -9,7 +9,7 @@ let page;
 
 test.beforeAll(async ({browser}) => {
     page = await browser.newPage();
-    const UtilityFunctions = new UtilityFunctions(process.env.ENV, page);
+    // const UtilityFunctions = new UtilityFunctions(process.env.ENV, page);
 });
 
 test.afterAll(async () =>{

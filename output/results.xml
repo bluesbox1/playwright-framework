@@ -1,87 +1,58 @@
-<testsuites id="" name="" tests="27" failures="1" skipped="0" errors="0" time="47.034029000000004">
-<testsuite name="src/tests/login.spec.js" timestamp="2024-07-01T06:20:07.474Z" hostname="" tests="1" failures="1" skipped="0" time="0" errors="0">
-<testcase name="Log in" classname="src/tests/login.spec.js" time="0">
-<failure message="login.spec.js:19:1 Log in" type="FAILURE">
-<![CDATA[  src/tests/login.spec.js:19:1 › Log in ────────────────────────────────────────────────────────────
-
-    ReferenceError: Cannot access 'UtilityFunctions' before initialization
-
-      10 | test.beforeAll(async ({browser}) => {
-      11 |     page = await browser.newPage();
-    > 12 |     const UtilityFunctions = new UtilityFunctions(process.env.ENV, page);
-         |                              ^
-      13 | });
-      14 |
-      15 | test.afterAll(async () =>{
-
-        at /Users/gwpascual/test-automation-workspace/playwright-framework/src/tests/login.spec.js:12:30
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/src-tests-login-Log-in/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</failure>
-<system-out>
-<![CDATA[
-[[ATTACHMENT|../test-results/src-tests-login-Log-in/test-failed-1.png]]
-]]>
-</system-out>
+<testsuites id="" name="" tests="26" failures="0" skipped="0" errors="0" time="34.56794">
+<testsuite name="tests/example.spec.js" timestamp="2024-07-03T10:12:06.540Z" hostname="" tests="2" failures="0" skipped="0" time="5.851" errors="0">
+<testcase name="has title" classname="tests/example.spec.js" time="2.675">
+</testcase>
+<testcase name="get started link" classname="tests/example.spec.js" time="3.176">
 </testcase>
 </testsuite>
-<testsuite name="tests/example.spec.js" timestamp="2024-07-01T06:20:07.474Z" hostname="" tests="2" failures="0" skipped="0" time="7.69" errors="0">
-<testcase name="has title" classname="tests/example.spec.js" time="4.06">
+<testsuite name="tests-examples/demo-todo-app.spec.js" timestamp="2024-07-03T10:12:06.540Z" hostname="" tests="24" failures="0" skipped="0" time="32.206" errors="0">
+<testcase name="New Todo › should allow me to add todo items" classname="tests-examples/demo-todo-app.spec.js" time="2.914">
 </testcase>
-<testcase name="get started link" classname="tests/example.spec.js" time="3.63">
+<testcase name="New Todo › should clear text input field when an item is added" classname="tests-examples/demo-todo-app.spec.js" time="1.116">
 </testcase>
-</testsuite>
-<testsuite name="tests-examples/demo-todo-app.spec.js" timestamp="2024-07-01T06:20:07.474Z" hostname="" tests="24" failures="0" skipped="0" time="37.162" errors="0">
-<testcase name="New Todo › should allow me to add todo items" classname="tests-examples/demo-todo-app.spec.js" time="3.276">
+<testcase name="New Todo › should append new items to the bottom of the list" classname="tests-examples/demo-todo-app.spec.js" time="1.159">
 </testcase>
-<testcase name="New Todo › should clear text input field when an item is added" classname="tests-examples/demo-todo-app.spec.js" time="1.292">
+<testcase name="Mark all as completed › should allow me to mark all items as completed" classname="tests-examples/demo-todo-app.spec.js" time="1.209">
 </testcase>
-<testcase name="New Todo › should append new items to the bottom of the list" classname="tests-examples/demo-todo-app.spec.js" time="1.44">
+<testcase name="Mark all as completed › should allow me to clear the complete state of all items" classname="tests-examples/demo-todo-app.spec.js" time="1.132">
 </testcase>
-<testcase name="Mark all as completed › should allow me to mark all items as completed" classname="tests-examples/demo-todo-app.spec.js" time="1.422">
+<testcase name="Mark all as completed › complete all checkbox should update state when items are completed / cleared" classname="tests-examples/demo-todo-app.spec.js" time="1.303">
 </testcase>
-<testcase name="Mark all as completed › should allow me to clear the complete state of all items" classname="tests-examples/demo-todo-app.spec.js" time="1.479">
+<testcase name="Item › should allow me to mark items as complete" classname="tests-examples/demo-todo-app.spec.js" time="1.184">
 </testcase>
-<testcase name="Mark all as completed › complete all checkbox should update state when items are completed / cleared" classname="tests-examples/demo-todo-app.spec.js" time="1.497">
+<testcase name="Item › should allow me to un-mark items as complete" classname="tests-examples/demo-todo-app.spec.js" time="1.318">
 </testcase>
-<testcase name="Item › should allow me to mark items as complete" classname="tests-examples/demo-todo-app.spec.js" time="1.424">
+<testcase name="Item › should allow me to edit an item" classname="tests-examples/demo-todo-app.spec.js" time="1.219">
 </testcase>
-<testcase name="Item › should allow me to un-mark items as complete" classname="tests-examples/demo-todo-app.spec.js" time="1.412">
+<testcase name="Editing › should hide other controls when editing" classname="tests-examples/demo-todo-app.spec.js" time="1.837">
 </testcase>
-<testcase name="Item › should allow me to edit an item" classname="tests-examples/demo-todo-app.spec.js" time="1.488">
+<testcase name="Editing › should save edits on blur" classname="tests-examples/demo-todo-app.spec.js" time="1.191">
 </testcase>
-<testcase name="Editing › should hide other controls when editing" classname="tests-examples/demo-todo-app.spec.js" time="1.465">
+<testcase name="Editing › should trim entered text" classname="tests-examples/demo-todo-app.spec.js" time="1.202">
 </testcase>
-<testcase name="Editing › should save edits on blur" classname="tests-examples/demo-todo-app.spec.js" time="1.399">
+<testcase name="Editing › should remove the item if an empty text string was entered" classname="tests-examples/demo-todo-app.spec.js" time="1.082">
 </testcase>
-<testcase name="Editing › should trim entered text" classname="tests-examples/demo-todo-app.spec.js" time="1.346">
+<testcase name="Editing › should cancel edits on escape" classname="tests-examples/demo-todo-app.spec.js" time="1.285">
 </testcase>
-<testcase name="Editing › should remove the item if an empty text string was entered" classname="tests-examples/demo-todo-app.spec.js" time="1.458">
+<testcase name="Counter › should display the current number of todo items" classname="tests-examples/demo-todo-app.spec.js" time="0.947">
 </testcase>
-<testcase name="Editing › should cancel edits on escape" classname="tests-examples/demo-todo-app.spec.js" time="1.39">
+<testcase name="Clear completed button › should display the correct text" classname="tests-examples/demo-todo-app.spec.js" time="1.181">
 </testcase>
-<testcase name="Counter › should display the current number of todo items" classname="tests-examples/demo-todo-app.spec.js" time="1.292">
+<testcase name="Clear completed button › should remove completed items when clicked" classname="tests-examples/demo-todo-app.spec.js" time="1.101">
 </testcase>
-<testcase name="Clear completed button › should display the correct text" classname="tests-examples/demo-todo-app.spec.js" time="1.401">
+<testcase name="Clear completed button › should be hidden when there are no items that are completed" classname="tests-examples/demo-todo-app.spec.js" time="1.236">
 </testcase>
-<testcase name="Clear completed button › should remove completed items when clicked" classname="tests-examples/demo-todo-app.spec.js" time="1.445">
+<testcase name="Persistence › should persist its data" classname="tests-examples/demo-todo-app.spec.js" time="1.345">
 </testcase>
-<testcase name="Clear completed button › should be hidden when there are no items that are completed" classname="tests-examples/demo-todo-app.spec.js" time="1.372">
+<testcase name="Routing › should allow me to display active items" classname="tests-examples/demo-todo-app.spec.js" time="1.229">
 </testcase>
-<testcase name="Persistence › should persist its data" classname="tests-examples/demo-todo-app.spec.js" time="1.556">
+<testcase name="Routing › should respect the back button" classname="tests-examples/demo-todo-app.spec.js" time="1.621">
 </testcase>
-<testcase name="Routing › should allow me to display active items" classname="tests-examples/demo-todo-app.spec.js" time="1.566">
+<testcase name="Routing › should allow me to display completed items" classname="tests-examples/demo-todo-app.spec.js" time="1.322">
 </testcase>
-<testcase name="Routing › should respect the back button" classname="tests-examples/demo-todo-app.spec.js" time="1.639">
+<testcase name="Routing › should allow me to display all items" classname="tests-examples/demo-todo-app.spec.js" time="1.311">
 </testcase>
-<testcase name="Routing › should allow me to display completed items" classname="tests-examples/demo-todo-app.spec.js" time="1.816">
-</testcase>
-<testcase name="Routing › should allow me to display all items" classname="tests-examples/demo-todo-app.spec.js" time="1.676">
-</testcase>
-<testcase name="Routing › should highlight the currently applied filter" classname="tests-examples/demo-todo-app.spec.js" time="1.611">
+<testcase name="Routing › should highlight the currently applied filter" classname="tests-examples/demo-todo-app.spec.js" time="1.762">
 </testcase>
 </testsuite>
 </testsuites>
