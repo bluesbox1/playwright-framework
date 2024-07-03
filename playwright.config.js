@@ -5,7 +5,7 @@ require('dotenv').config({ path: path.resolve(__dirname, 'my.env')});
 
 module.exports = defineConfig({
   use: {
-    headless: true,
+    headless: false,
     viewport: { width: 1600, height: 900},
     ignoreHTTPSErrors: true,
     video: 'on-first-retry',
